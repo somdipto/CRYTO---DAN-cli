@@ -47,7 +47,7 @@
       "exchange": "binance",
       "binance_api_key": "your_binance_api_key",
       "binance_secret_key": "your_binance_secret_key",
-      "minimax_key": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJHcm91cE5hbWUiOiJTb2RhbiBNb3MiLCJVc2VyTmFtZSI6IlNvZGFuIE1vcyIsIkFjY291bnQiOiIiLCJTdWJqZWN0SUQiOiIxOTg0OTA1ODg3MzU3MDgzNzY3IiwiUGhvbmUiOiIiLCJHcm91cElEIjoiMTk4NDkwNTg4NzM1Mjg4NTM2NyIsIlBhZ2VOYW1lIjoiIiwiTWFpbCI6InN4dm9jdXNhQGdtYWlsLmNvbSIsIkNyZWF0ZVRpbWUiOiIyMDI1LTExLTAyIDE3OjI1OjE1IiwiVG9rZW5UeXBlIjoxLCJpc3MiOiJtaW5pbWF4In0.HmT0S2cjLzUtaX7nk10Qd9vfg76KWCrcaensHzLj0bebgLJyta9TyU1vDhC42pWW_XEd0L18Ui4rJOGwwupV0gLO6xhVMsHoWZkySb9w6XAVNO6R3nyrTuAvz4mI0a-R2RYEr7XRiXLlvdNSN72gPifC49vcaI_3THmJTVllHwtE5UnSS3OPBnY4eWy-Slo1dNGcfCmJ4zhBdTluVKaL-yk9q4XF8PRxJN9IyebdVvivhu1SyQNdvJ9Qyvg-aQYPfIr3No9ATnvXvS3vMT72IbI9TnuYhCnMQUQfPFa5Cra4OAupjarENnO6NUJVKWs-G6l_owSggvHWJD_YN06HmA",
+      "minimax_key": "[REDACTED:jwt-token]",
       "initial_balance": 1000,
       "scan_interval_minutes": 3
     },
