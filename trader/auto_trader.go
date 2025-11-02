@@ -114,19 +114,19 @@ func NewAutoTrader(config AutoTraderConfig) (*AutoTrader, error) {
 	if config.AIModel == "custom" {
 		// 使用自定义API
 		mcpClient.SetCustomAPI(config.CustomAPIURL, config.CustomAPIKey, config.CustomModelName)
-		log.Printf("🤖 [%s] 使用自定义AI API: %s (模型: %s)", config.Name, config.CustomAPIURL, config.CustomModelName)
+		log.Printf("🤖 [%s] Using custom AI API: %s (model: %s)", config.Name, config.CustomAPIURL, config.CustomModelName)
 	} else if config.AIModel == "minimax" {
 		// 使用MiniMax
 		mcpClient.SetMiniMaxAPIKey(config.MiniMaxKey)
-		log.Printf("🤖 [%s] 使用MiniMax M2 AI (免费)", config.Name)
+		log.Printf("🤖 [%s] Using MiniMax M2 AI (FREE)", config.Name)
 	} else if config.UseQwen || config.AIModel == "qwen" {
 		// 使用Qwen
 		mcpClient.SetQwenAPIKey(config.QwenKey, "")
-		log.Printf("🤖 [%s] 使用阿里云Qwen AI", config.Name)
+		log.Printf("🤖 [%s] Using Alibaba Cloud Qwen AI", config.Name)
 	} else {
 		// 默认使用DeepSeek
 		mcpClient.SetDeepSeekAPIKey(config.DeepSeekKey)
-		log.Printf("🤖 [%s] 使用DeepSeek AI", config.Name)
+		log.Printf("🤖 [%s] Using DeepSeek AI", config.Name)
 	}
 
 	// 初始化币种池API
@@ -145,22 +145,22 @@ func NewAutoTrader(config AutoTraderConfig) (*AutoTrader, error) {
 
 	switch config.Exchange {
 	case "binance":
-		log.Printf("🏦 [%s] 使用币安合约交易", config.Name)
+		log.Printf("🏦 [%s] Using Binance Futures trading", config.Name)
 		trader = NewFuturesTrader(config.BinanceAPIKey, config.BinanceSecretKey)
 	case "hyperliquid":
-		log.Printf("🏦 [%s] 使用Hyperliquid交易", config.Name)
+		log.Printf("🏦 [%s] Using Hyperliquid trading", config.Name)
 		trader, err = NewHyperliquidTrader(config.HyperliquidPrivateKey, config.HyperliquidWalletAddr, config.HyperliquidTestnet)
 		if err != nil {
 			return nil, fmt.Errorf("初始化Hyperliquid交易器失败: %w", err)
 		}
 	case "aster":
-		log.Printf("🏦 [%s] 使用Aster交易", config.Name)
+		log.Printf("🏦 [%s] Using Aster trading", config.Name)
 		trader, err = NewAsterTrader(config.AsterUser, config.AsterSigner, config.AsterPrivateKey)
 		if err != nil {
 			return nil, fmt.Errorf("初始化Aster交易器失败: %w", err)
 		}
 	case "delta":
-		log.Printf("🏦 [%s] 使用Delta Exchange交易", config.Name)
+		log.Printf("🏦 [%s] Using Delta Exchange trading", config.Name)
 		trader = NewDeltaTrader(config.DeltaAPIKey, config.DeltaAPISecret, config.DeltaTestnet)
 	default:
 		return nil, fmt.Errorf("不支持的交易平台: %s", config.Exchange)

@@ -15,17 +15,17 @@ import (
 
 func main() {
 	fmt.Println("╔════════════════════════════════════════════════════════════╗")
-	fmt.Println("║    🏆 AI模型交易竞赛系统 - Qwen vs DeepSeek               ║")
+	fmt.Println("║    🏆 AI Trading Competition System - Multi-Agent Battle   ║")
 	fmt.Println("╚════════════════════════════════════════════════════════════╝")
 	fmt.Println()
 
-	// 加载配置文件
+	// Load configuration file
 	configFile := "config.json"
 	if len(os.Args) > 1 {
 		configFile = os.Args[1]
 	}
 
-	log.Printf("📋 加载配置文件: %s", configFile)
+	log.Printf("📋 Loading configuration file: %s", configFile)
 	cfg, err := config.LoadConfig(configFile)
 	if err != nil {
 		log.Fatalf("❌ Failed to load configuration: %v", err)

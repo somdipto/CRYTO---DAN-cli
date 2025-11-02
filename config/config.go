@@ -143,41 +143,41 @@ func (c *Config) Validate() error {
 		// 根据平台验证对应的密钥
 		if trader.Exchange == "binance" {
 			if trader.BinanceAPIKey == "" || trader.BinanceSecretKey == "" {
-				return fmt.Errorf("trader[%d]: 使用币安时必须配置binance_api_key和binance_secret_key", i)
+				return fmt.Errorf("trader[%d]: when using Binance, must configure binance_api_key and binance_secret_key", i)
 			}
 		} else if trader.Exchange == "hyperliquid" {
 			if trader.HyperliquidPrivateKey == "" {
-				return fmt.Errorf("trader[%d]: 使用Hyperliquid时必须配置hyperliquid_private_key", i)
+				return fmt.Errorf("trader[%d]: when using Hyperliquid, must configure hyperliquid_private_key", i)
 			}
 		} else if trader.Exchange == "aster" {
 			if trader.AsterUser == "" || trader.AsterSigner == "" || trader.AsterPrivateKey == "" {
-				return fmt.Errorf("trader[%d]: 使用Aster时必须配置aster_user, aster_signer和aster_private_key", i)
+				return fmt.Errorf("trader[%d]: when using Aster, must configure aster_user, aster_signer and aster_private_key", i)
 			}
 		} else if trader.Exchange == "delta" {
 			if trader.DeltaAPIKey == "" || trader.DeltaAPISecret == "" {
-				return fmt.Errorf("trader[%d]: 使用Delta Exchange时必须配置delta_api_key和delta_api_secret", i)
+				return fmt.Errorf("trader[%d]: when using Delta Exchange, must configure delta_api_key and delta_api_secret", i)
 			}
 		}
 
 		if trader.AIModel == "qwen" && trader.QwenKey == "" {
-			return fmt.Errorf("trader[%d]: 使用Qwen时必须配置qwen_key", i)
+			return fmt.Errorf("trader[%d]: when using Qwen, must configure qwen_key", i)
 		}
 
 		if trader.AIModel == "minimax" && trader.MiniMaxKey == "" {
-			return fmt.Errorf("trader[%d]: 使用MiniMax时必须配置minimax_key", i)
+			return fmt.Errorf("trader[%d]: when using MiniMax, must configure minimax_key", i)
 		}
 		if trader.AIModel == "deepseek" && trader.DeepSeekKey == "" {
-			return fmt.Errorf("trader[%d]: 使用DeepSeek时必须配置deepseek_key", i)
+			return fmt.Errorf("trader[%d]: when using DeepSeek, must configure deepseek_key", i)
 		}
 		if trader.AIModel == "custom" {
 			if trader.CustomAPIURL == "" {
-				return fmt.Errorf("trader[%d]: 使用自定义API时必须配置custom_api_url", i)
+				return fmt.Errorf("trader[%d]: when using custom API, must configure custom_api_url", i)
 			}
 			if trader.CustomAPIKey == "" {
-				return fmt.Errorf("trader[%d]: 使用自定义API时必须配置custom_api_key", i)
+				return fmt.Errorf("trader[%d]: when using custom API, must configure custom_api_key", i)
 			}
 			if trader.CustomModelName == "" {
-				return fmt.Errorf("trader[%d]: 使用自定义API时必须配置custom_model_name", i)
+				return fmt.Errorf("trader[%d]: when using custom API, must configure custom_model_name", i)
 			}
 		}
 		if trader.InitialBalance <= 0 {

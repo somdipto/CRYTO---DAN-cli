@@ -97,41 +97,41 @@ func (cfg *Client) SetClient(Client Client) {
 // CallWithMessages 使用 system + user prompt 调用AI API（推荐）
 func (cfg *Client) CallWithMessages(systemPrompt, userPrompt string) (string, error) {
 	if cfg.APIKey == "" {
-		return "", fmt.Errorf("AI API密钥未设置，请先调用 SetDeepSeekAPIKey() 或 SetQwenAPIKey()")
+		return "", fmt.Errorf("AI API key not set, please call SetDeepSeekAPIKey(), SetQwenAPIKey(), or SetMiniMaxAPIKey() first")
 	}
 
-	// 重试配置
+	// Retry configuration
 	maxRetries := 3
 	var lastErr error
 
 	for attempt := 1; attempt <= maxRetries; attempt++ {
 		if attempt > 1 {
-			fmt.Printf("⚠️  AI API调用失败，正在重试 (%d/%d)...\n", attempt, maxRetries)
+			fmt.Printf("⚠️  AI API call failed, retrying (%d/%d)...\n", attempt, maxRetries)
 		}
 
 		result, err := cfg.callOnce(systemPrompt, userPrompt)
 		if err == nil {
 			if attempt > 1 {
-				fmt.Printf("✓ AI API重试成功\n")
+				fmt.Printf("✓ AI API retry successful\n")
 			}
 			return result, nil
 		}
 
 		lastErr = err
-		// 如果不是网络错误，不重试
+		// If not a network error, don't retry
 		if !isRetryableError(err) {
 			return "", err
 		}
 
-		// 重试前等待
+		// Wait before retry
 		if attempt < maxRetries {
 			waitTime := time.Duration(attempt) * 2 * time.Second
-			fmt.Printf("⏳ 等待%v后重试...\n", waitTime)
+			fmt.Printf("⏳ Waiting %v before retry...\n", waitTime)
 			time.Sleep(waitTime)
 		}
 	}
 
-	return "", fmt.Errorf("重试%d次后仍然失败: %w", maxRetries, lastErr)
+	return "", fmt.Errorf("failed after %d retries: %w", maxRetries, lastErr)
 }
 
 // callOnce 单次调用AI API（内部使用）
@@ -239,10 +239,10 @@ func (cfg *Client) callOnce(systemPrompt, userPrompt string) (string, error) {
 	return result.Choices[0].Message.Content, nil
 }
 
-// isRetryableError 判断错误是否可重试
+// isRetryableError determines if an error is retryable
 func isRetryableError(err error) bool {
 	errStr := err.Error()
-	// 网络错误、超时、EOF等可以重试
+	// Network errors, timeouts, EOF etc. can be retried
 	retryableErrors := []string{
 		"EOF",
 		"timeout",
