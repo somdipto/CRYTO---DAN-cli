@@ -1,55 +1,295 @@
-# 🤖 DANTO - Agentic Trading OS
+# 🤖 DANTO - Universal Agentic Trading OS
 
 [![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat&logo=go)](https://golang.org/)
 [![React](https://img.shields.io/badge/React-18+-61DAFB?style=flat&logo=react)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Backed by Amber.ac](https://img.shields.io/badge/Backed%20by-Amber.ac-orange.svg)](https://amber.ac)
+[![AI Providers](https://img.shields.io/badge/AI-4%20Providers-purple.svg)](#ai-providers)
+[![Exchanges](https://img.shields.io/badge/Exchanges-4%20Supported-blue.svg)](#supported-exchanges)
 
 **Languages:** [English](README.md) | [中文](README.zh-CN.md) | [Українська](README.uk.md) | [Русский](README.ru.md)
 
-**Official Twitter:** [@nofx_ai](https://x.com/nofx_ai)
+**Official Twitter:** [@nofx_ai](https://x.com/nofx_ai) | **Community:** [Telegram](https://t.me/nofx_dev_community)
 
 ---
 
 ## 🚀 Universal AI Trading Operating System
 
-**DANTO** is a **universal Agentic Trading OS** built on a unified architecture. We've successfully closed the loop in crypto markets: **"Multi-Agent Decision → Unified Risk Control → Low-Latency Execution → Live/Paper Account Backtesting"**, and are now expanding this same technology stack to **stocks, futures, options, forex, and all financial markets**.
+**DANTO** is the world's first **universal Agentic Trading OS** that enables AI agents to trade across multiple markets with self-learning capabilities. Our closed-loop system: **"Multi-Agent Decision → Unified Risk Control → Low-Latency Execution → Live Performance Analysis"** is revolutionizing algorithmic trading.
 
-### 🎯 Core Features
+### ⚡ Quick Start (3 Minutes)
 
-- **Universal Data & Backtesting Layer**: Cross-market, cross-timeframe, cross-exchange unified representation and factor library, accumulating transferable "strategy memory"
-- **Multi-Agent Self-Play & Self-Evolution**: Strategies automatically compete and select the best, continuously iterating based on account-level PnL and risk constraints
-- **Integrated Execution & Risk Control**: Low-latency routing, slippage/risk control sandbox, account-level limits, one-click market switching
+```bash
+# 1. Clone & Setup
+git clone https://github.com/somdipto/DANTO.git && cd DANTO
 
-### 🏢 Backed by [Amber.ac](https://amber.ac)
+# 2. Docker One-Click Start (Recommended)
+./start.sh start --build
 
-### 👥 Core Team
+# 3. Access Dashboard
+open http://localhost:3000
+```
 
-- **Tinkle** - [@Web3Tinkle](https://x.com/Web3Tinkle)
-- **Zack** - [@0x_ZackH](https://x.com/0x_ZackH)
+### 🎯 Why DANTO?
 
-### 💼 Seed Funding Round Open
-
-We are currently raising our **seed round**. 
-
-**For investment inquiries**, please DM **Tinkle** or **Zack** via Twitter.
-
-**For partnerships and collaborations**, please DM our official Twitter [@nofx_ai](https://x.com/nofx_ai).
+| Feature | Traditional Bots | DANTO |
+|---------|------------------|-------|
+| **AI Decision Making** | ❌ Rule-based | ✅ Multi-LLM with CoT reasoning |
+| **Self-Learning** | ❌ Static strategies | ✅ Historical feedback & adaptation |
+| **Multi-Exchange** | ❌ Single platform | ✅ 4 exchanges unified |
+| **Risk Management** | ❌ Basic stops | ✅ AI-driven position sizing |
+| **Competition Mode** | ❌ Single agent | ✅ Multi-agent tournaments |
+| **Real-time UI** | ❌ Basic charts | ✅ Professional trading dashboard |
 
 ---
 
-> ⚠️ **Risk Warning**: This system is experimental. AI auto-trading carries significant risks. Strongly recommended for learning/research purposes or testing with small amounts only!
+## 🤖 AI Providers
 
-## 👥 Developer Community
+Choose from **4 powerful AI providers** for trading decisions:
 
-Join our Telegram developer community to discuss, share ideas, and get support:
+| Provider | Cost | Speed | Quality | Free Tier | Best For |
+|----------|------|-------|---------|-----------|----------|
+| **🆓 MiniMax M2** | **FREE** | ⚡ Fast | ⭐⭐⭐⭐ | ✅ Unlimited | **Beginners** |
+| **💎 DeepSeek** | $0.14/1M | ⚡ Fast | ⭐⭐⭐⭐⭐ | ❌ | **Performance** |
+| **🔥 Qwen** | $0.20/1M | 🔄 Medium | ⭐⭐⭐⭐ | ❌ | **Reliability** |
+| **🚀 Custom (GPT-4)** | $10/1M | 🔄 Medium | ⭐⭐⭐⭐⭐ | ❌ | **Maximum Quality** |
 
-**💬 [NOFX Developer Community](https://t.me/nofx_dev_community)**
+### 🆕 NEW: MiniMax M2 (Completely FREE!)
+- ✅ **Zero API costs** - Perfect for learning and testing
+- ✅ **High performance** - Competitive with paid models  
+- ✅ **Anthropic compatible** - Claude-style reasoning
+- ✅ **No rate limits** - Trade as frequently as needed
+
+---
+
+## 🏦 Supported Exchanges
+
+Trade on **4 major platforms** with unified interface:
+
+### 🥇 Centralized Exchanges (CEX)
+- **🟡 Binance Futures** - World's largest crypto exchange
+  - ✅ Highest liquidity & lowest spreads
+  - ✅ Up to 125x leverage
+  - ✅ 200+ trading pairs
+
+### 🥈 Decentralized Exchanges (DEX)  
+- **🔵 Hyperliquid** - High-performance on-chain perps
+  - ✅ No KYC required
+  - ✅ Non-custodial trading
+  - ✅ Fast execution with on-chain settlement
+
+- **🟢 Aster DEX** - Binance-compatible decentralized exchange
+  - ✅ API wallet security system
+  - ✅ Lower fees than CEX
+  - ✅ Multi-chain support (ETH, BSC, Polygon)
+
+- **🟠 Delta Exchange** - Advanced derivatives platform
+  - ✅ Options, futures, perpetuals
+  - ✅ Up to 100x leverage
+  - ✅ Global access, competitive fees
+
+---
+
+## 🏆 Core Features
+
+### 🧠 Multi-Agent AI Competition
+- **Live Agent Battles**: Watch AI models compete in real-time
+- **Performance Leaderboards**: ROI tracking, win rates, Sharpe ratios
+- **Self-Evolution**: Agents learn from wins/losses and adapt strategies
+- **Chain-of-Thought Logs**: See exactly how AI makes each decision
+
+### 📊 Professional Trading Interface
+- **Binance-Style Dashboard**: Dark theme, real-time updates
+- **Equity Curves**: Historical performance visualization
+- **Position Management**: Live P/L, margin usage, liquidation prices
+- **Decision Analytics**: Complete AI reasoning logs with expandable prompts
+
+### ⚡ Advanced Risk Management
+- **AI Position Sizing**: Dynamic allocation based on volatility & account size
+- **Multi-Layer Protection**: Stop-loss, take-profit, margin limits
+- **Cross-Exchange Limits**: Unified risk across all platforms
+- **Drawdown Controls**: Automatic trading suspension on losses
+
+### 🔄 Self-Learning System
+- **Historical Analysis**: Reviews last 20 trades before each decision
+- **Performance Feedback**: Win rate, profit factor, best/worst assets
+- **Strategy Adaptation**: Avoids repeating mistakes, reinforces successes
+- **Market Condition Recognition**: Adjusts style based on volatility
+
+---
+
+## 🏢 Backed by [Amber.ac](https://amber.ac)
+
+### 👥 Core Team
+- **Tinkle** - [@Web3Tinkle](https://x.com/Web3Tinkle) - CEO & Co-founder
+- **Zack** - [@0x_ZackH](https://x.com/0x_ZackH) - CTO & Co-founder
+
+### 💼 Investment & Partnerships
+- 🚀 **Seed Round Open** - Building the future of AI trading
+- 💬 **Investment Inquiries**: DM Tinkle or Zack on Twitter
+- 🤝 **Partnerships**: Contact [@nofx_ai](https://x.com/nofx_ai)
+
+---
+
+> ⚠️ **Risk Warning**: AI trading involves significant risk. Only use funds you can afford to lose. Start with small amounts for testing. Past performance doesn't guarantee future results.
+
+## 👥 Community & Support
+
+- **💬 Developer Community**: [Telegram Group](https://t.me/nofx_dev_community)
+- **🐦 Official Updates**: [@nofx_ai](https://x.com/nofx_ai)
+- **📖 Documentation**: [Integration Guide](INTEGRATION_GUIDE.md)
+- **🐛 Bug Reports**: [GitHub Issues](https://github.com/somdipto/DANTO/issues)
+
+---
+
+## 🚀 Getting Started
+
+### 📋 Prerequisites
+
+Before you begin, you'll need:
+
+1. **Trading Account** (choose one):
+   - [Binance Futures](https://www.binance.com/join?ref=TINKLEVIP) (recommended)
+   - [Delta Exchange](https://www.delta.exchange) (derivatives)
+   - [Hyperliquid](https://hyperliquid.xyz) (decentralized)
+   - [Aster DEX](https://www.asterdex.com) (multi-chain)
+
+2. **AI API Key** (choose one):
+   - [MiniMax M2](https://api.minimax.io) - **FREE** (recommended for beginners)
+   - [DeepSeek](https://platform.deepseek.com) - $0.14/1M tokens
+   - [Qwen](https://dashscope.aliyuncs.com) - $0.20/1M tokens
+   - Custom OpenAI-compatible API
+
+### 🐳 One-Click Docker Setup (Recommended)
+
+```bash
+# Clone repository
+git clone https://github.com/somdipto/DANTO.git && cd DANTO
+
+# Copy and edit configuration
+cp config.json.example config.json
+nano config.json  # Add your API keys
+
+# Start with Docker (handles all dependencies)
+./start.sh start --build
+
+# Access dashboard
+open http://localhost:3000
+```
+
+### ⚙️ Manual Installation
+
+<details>
+<summary>Click to expand manual setup instructions</summary>
+
+**Requirements:**
+- Go 1.21+
+- Node.js 18+
+- TA-Lib library
+
+**Install TA-Lib:**
+```bash
+# macOS
+brew install ta-lib
+
+# Ubuntu/Debian
+sudo apt-get install libta-lib0-dev
+```
+
+**Setup:**
+```bash
+# Install dependencies
+go mod download
+cd web && npm install && cd ..
+
+# Configure and run
+cp config.json.example config.json
+# Edit config.json with your API keys
+go build -o danto && ./danto
+```
+
+</details>
+
+### 📝 Configuration Examples
+
+#### Beginner Setup (Free AI + Binance)
+```json
+{
+  "traders": [{
+    "id": "my_trader",
+    "name": "My AI Trader",
+    "ai_model": "minimax",
+    "exchange": "binance",
+    "binance_api_key": "your_binance_key",
+    "binance_secret_key": "your_binance_secret",
+    "minimax_key": "your_free_minimax_key",
+    "initial_balance": 1000
+  }]
+}
+```
+
+#### Multi-Agent Competition
+```json
+{
+  "traders": [
+    {
+      "id": "deepseek_binance",
+      "ai_model": "deepseek",
+      "exchange": "binance"
+    },
+    {
+      "id": "minimax_delta", 
+      "ai_model": "minimax",
+      "exchange": "delta"
+    }
+  ]
+}
+```
 
 ---
 
 ## 🆕 What's New (Latest Update)
+
+### 🚀 MiniMax M2 + Delta Exchange Integration!
+
+DANTO now supports **MiniMax M2 (FREE AI)** and **Delta Exchange** for advanced derivatives trading!
+
+#### **🆓 MiniMax M2 - Completely FREE AI Provider**
+
+The world's first free AI trading provider with professional-grade performance!
+
+**Key Features:**
+- ✅ **Zero API costs** - No usage fees, perfect for beginners
+- ✅ **Anthropic Claude compatibility** - Advanced reasoning capabilities
+- ✅ **High performance** - Competitive with paid AI models
+- ✅ **No rate limits** - Trade as frequently as needed
+- ✅ **Easy setup** - Just get your free API key and start trading
+
+**Quick Start:**
+1. Get free API key from [MiniMax Platform](https://api.minimax.io)
+2. Set `"ai_model": "minimax"` in config.json
+3. Add `"minimax_key": "your_key"`
+4. Start trading with zero AI costs!
+
+#### **🟠 Delta Exchange - Advanced Derivatives Platform**
+
+Professional derivatives trading with options, futures, and perpetuals!
+
+**Key Features:**
+- ✅ **Advanced derivatives** - Options, futures, perpetual swaps
+- ✅ **High leverage** - Up to 100x leverage available
+- ✅ **Global access** - Available worldwide with competitive fees
+- ✅ **Professional API** - Full trading automation support
+- ✅ **Testnet support** - Safe testing environment
+
+**Quick Start:**
+1. Register at [Delta Exchange](https://www.delta.exchange)
+2. Create API keys with trading permissions
+3. Set `"exchange": "delta"` in config.json
+4. Add your API credentials and start trading derivatives!
+
+See [Integration Guide](INTEGRATION_GUIDE.md) for detailed setup instructions.
 
 ### 🚀 Multi-Exchange Support!
 
@@ -116,6 +356,13 @@ A Binance-compatible decentralized perpetual futures exchange!
 ![Details Page](screenshots/details-page.png)
 *Professional trading interface with equity curves, live positions, and AI decision logs with expandable input prompts & chain-of-thought reasoning*
 
+### 🎯 Key Interface Features
+- **Real-time Performance Tracking**: Live ROI, win rates, and Sharpe ratios
+- **Professional Charts**: Binance-style dark theme with equity curves
+- **AI Decision Transparency**: Complete chain-of-thought reasoning logs
+- **Multi-Exchange Support**: Unified interface across all trading platforms
+- **Risk Management Dashboard**: Live margin usage, position limits, drawdown controls
+
 ---
 
 ## ✨ Current Implementation - Crypto Markets
@@ -179,9 +426,165 @@ Our proven crypto infrastructure is being extended to:
 
 ---
 
+### 🏆 Multi-Agent Competition Framework
+- **Live Agent Battle**: Qwen vs DeepSeek models compete in real-time trading
+- **Independent Account Management**: Each agent maintains its own decision logs and performance metrics
+- **Real-time Performance Comparison**: Live ROI tracking, win rate statistics, and head-to-head analysis
+- **Self-Evolution Loop**: Agents learn from their historical performance and continuously improve
+
+### 🧠 AI Self-Learning & Optimization
+- **Historical Feedback System**: Analyzes last 20 trading cycles before each decision
+- **Smart Performance Analysis**:
+  - Identifies best/worst performing assets
+  - Calculates win rate, profit/loss ratio, average profit in real USDT terms
+  - Avoids repeating mistakes (consecutive losing patterns)
+  - Reinforces successful strategies (high win rate patterns)
+- **Dynamic Strategy Adjustment**: AI autonomously adapts trading style based on backtest results
+
+### 📊 Universal Market Data Layer (Crypto Implementation)
+- **Multi-Timeframe Analysis**: 3-minute real-time + 4-hour trend data
+- **Technical Indicators**: EMA20/50, MACD, RSI(7/14), ATR
+- **Open Interest Tracking**: Market sentiment, capital flow analysis
+- **Liquidity Filtering**: Auto-filters low liquidity assets (<15M USD)
+- **Cross-Exchange Support**: Binance, Hyperliquid, Aster DEX with unified data interface
+
+### 🎯 Unified Risk Control System
+- **Position Limits**: Per-asset limits (Altcoins ≤1.5x equity, BTC/ETH ≤10x equity)
+- **Configurable Leverage**: Dynamic leverage from 1x to 50x based on asset class and account type
+- **Margin Management**: Total usage ≤90%, AI-controlled allocation
+- **Risk-Reward Enforcement**: Mandatory ≥1:2 stop-loss to take-profit ratio
+- **Anti-Stacking Protection**: Prevents duplicate positions in same asset/direction
+
+### ⚡ Low-Latency Execution Engine
+- **Multi-Exchange API Integration**: Binance Futures, Hyperliquid DEX, Aster DEX
+- **Automatic Precision Handling**: Smart order size & price formatting per exchange
+- **Priority Execution**: Close existing positions first, then open new ones
+- **Slippage Control**: Pre-execution validation, real-time precision checks
+
+### 🎨 Professional Monitoring Interface
+- **Binance-Style Dashboard**: Professional dark theme with real-time updates
+- **Equity Curves**: Historical account value tracking (USD/percentage toggle)
+- **Performance Charts**: Multi-agent ROI comparison with live updates
+- **Complete Decision Logs**: Full Chain of Thought (CoT) reasoning for every trade
+- **5-Second Data Refresh**: Real-time account, position, and P/L updates
+
+---
+
+## 🔮 Roadmap - Universal Market Expansion
+
+Our proven crypto infrastructure is being extended to:
+
+- **📈 Stock Markets**: US equities, A-shares, Hong Kong stocks
+- **📊 Futures Markets**: Commodity futures, index futures
+- **🎯 Options Trading**: Equity options, crypto options
+- **💱 Forex Markets**: Major currency pairs, cross rates
+
+**Same architecture. Same agent framework. All markets.**
+
+---
+
 ## 🏗️ Technical Architecture
 
+### 🏛️ System Overview
+
 ```
+┌─────────────────────────────────────────────────────────────┐
+│                    DANTO Architecture                       │
+├─────────────────────────────────────────────────────────────┤
+│  Web Dashboard (React + TypeScript)                        │
+│  ├── Real-time Charts (Recharts)                           │
+│  ├── Competition Leaderboard                               │
+│  └── AI Decision Logs                                      │
+├─────────────────────────────────────────────────────────────┤
+│  API Layer (Gin Framework)                                 │
+│  ├── RESTful Endpoints                                     │
+│  ├── WebSocket Updates                                     │
+│  └── Multi-Trader Management                               │
+├─────────────────────────────────────────────────────────────┤
+│  AI Decision Engine                                         │
+│  ├── MiniMax M2 (FREE)    ├── DeepSeek ($0.14/1M)        │
+│  ├── Qwen ($0.20/1M)      └── Custom (GPT-4)             │
+│  └── Chain-of-Thought Reasoning                           │
+├─────────────────────────────────────────────────────────────┤
+│  Trading Engine (Multi-Exchange)                           │
+│  ├── Binance Futures      ├── Delta Exchange              │
+│  ├── Hyperliquid DEX      └── Aster DEX                   │
+│  └── Unified Risk Management                               │
+├─────────────────────────────────────────────────────────────┤
+│  Market Data Layer                                          │
+│  ├── Real-time Price Feeds                                │
+│  ├── Technical Indicators (TA-Lib)                        │
+│  └── Cross-Exchange Normalization                         │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 📁 Project Structure
+
+```
+danto/
+├── main.go                          # Program entry (multi-trader manager)
+├── config.json                      # Configuration file (API keys, multi-trader config)
+│
+├── api/                            # HTTP API service
+│   └── server.go                   # Gin framework, RESTful API
+│
+├── trader/                         # Trading core
+│   ├── auto_trader.go              # Auto trading main controller (single trader)
+│   ├── binance_futures.go          # Binance futures API wrapper
+│   ├── delta_trader.go             # Delta Exchange API wrapper
+│   ├── hyperliquid_trader.go       # Hyperliquid DEX API wrapper
+│   ├── aster_trader.go             # Aster DEX API wrapper
+│   └── interface.go                # Unified trader interface
+│
+├── manager/                        # Multi-trader management
+│   └── trader_manager.go           # Manages multiple trader instances
+│
+├── mcp/                            # Model Context Protocol - AI communication
+│   └── client.go                   # AI API client (DeepSeek/Qwen/MiniMax integration)
+│
+├── decision/                       # AI decision engine
+│   └── engine.go                   # Decision logic with historical feedback
+│
+├── market/                         # Market data fetching
+│   └── data.go                     # Market data & technical indicators (K-line, RSI, MACD)
+│
+├── pool/                           # Coin pool management
+│   └── coin_pool.go                # AI500 + OI Top merged pool
+│
+├── logger/                         # Logging system
+│   └── decision_logger.go          # Decision recording + performance analysis
+│
+├── decision_logs/                  # Decision log storage
+│   ├── qwen_trader/                # Qwen trader logs
+│   └── deepseek_trader/            # DeepSeek trader logs
+│
+└── web/                            # React frontend
+    ├── src/
+    │   ├── components/             # React components
+    │   │   ├── EquityChart.tsx     # Equity curve chart
+    │   │   ├── ComparisonChart.tsx # Multi-AI comparison chart
+    │   │   └── CompetitionPage.tsx # Competition leaderboard
+    │   ├── lib/api.ts              # API call wrapper
+    │   ├── types/index.ts          # TypeScript types
+    │   ├── index.css               # Binance-style CSS
+    │   └── App.tsx                 # Main app
+    └── package.json
+```
+
+### 🔧 Core Dependencies
+
+**Backend (Go)**
+- `github.com/adshao/go-binance/v2` - Binance API client
+- `github.com/markcheno/go-talib` - Technical indicator calculation (TA-Lib)
+- `github.com/gin-gonic/gin` - HTTP API framework
+
+**Frontend (React + TypeScript)**
+- `react` + `react-dom` - UI framework
+- `recharts` - Chart library (equity curve, comparison charts)
+- `swr` - Data fetching and caching
+- `tailwindcss` - CSS framework
+
+---
 danto/
 ├── main.go                          # Program entry (multi-trader manager)
 ├── config.json                      # Configuration file (API keys, multi-trader config)
