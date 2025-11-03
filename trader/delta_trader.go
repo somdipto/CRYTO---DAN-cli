@@ -39,7 +39,7 @@ func NewDeltaTrader(apiKey, apiSecret string, testnet bool) *DeltaTrader {
 }
 
 // generateSignature generates Delta Exchange API signature
-// Delta uses HMAC-SHA256 with timestamp for authentication
+// Delta uses HMAC-SHA256 with specific message format: method + path + body + timestamp
 func (dt *DeltaTrader) generateSignature(method, path, body string, timestamp int64) string {
 	message := fmt.Sprintf("%s%s%s%d", method, path, body, timestamp)
 	h := hmac.New(sha256.New, []byte(dt.apiSecret))
