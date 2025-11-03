@@ -25,6 +25,15 @@ DANTO revolutionizes algorithmic trading through **AI agents that learn, compete
 
 ### ⚡ Quick Start (3 Minutes)
 
+### Single Command Installation (Recommended)
+
+```bash
+# Install and run DANTO AI Trading System with a single command
+curl -sSL https://raw.githubusercontent.com/somdipto/DANTO/main/install.sh | bash
+```
+
+### Manual Setup (Alternative)
+
 ```bash
 # 1. Clone & Setup
 git clone https://github.com/somdipto/DANTO.git && cd DANTO
@@ -206,7 +215,13 @@ Historical analysis and strategy adaptation
 
 ### Installation
 
-#### 🐳 Docker (Recommended)
+#### 🚀 Single Command Installation (Easiest)
+```bash
+# One-liner installation that handles all dependencies
+curl -sSL https://raw.githubusercontent.com/somdipto/DANTO/main/install.sh | bash
+```
+
+### 🐳 Docker (Recommended)
 ```bash
 git clone https://github.com/somdipto/DANTO.git && cd DANTO
 cp config.json.example config.json
