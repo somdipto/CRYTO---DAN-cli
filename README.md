@@ -13,7 +13,7 @@
 
 **The world's first universal AI trading operating system with self-learning capabilities**
 
-[🚀 Quick Start](#-quick-start) • [📖 Documentation](INTEGRATION_GUIDE.md) • [💬 Community](https://t.me/nofx_dev_community) • [🐦 Twitter](https://x.com/nofx_ai)
+[🚀 Quick Start](#-quick-start) • [📖 Documentation](INTEGRATION_GUIDE.md)
 
 </div>
 
